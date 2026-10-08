@@ -1,0 +1,212 @@
+{
+  "evaluation_summary": {
+    "total_test_cases": 10,
+    "passed": 10,
+    "failed": 0,
+    "errors": 0,
+    "overall_score": 0.74,
+    "overall_percentage": 74.5,
+    "metrics": [
+      "correctness",
+      "relevance",
+      "completeness",
+      "tool_usage"
+    ],
+    "tool_usage_note": "The current Travel Planner Agent does not use external tools, so Tool Usage is scored as 0.0."
+  },
+  "failed_test_cases": [],
+  "results": [
+    {
+      "test_case_id": "TC01",
+      "category": "Normal Travel Request",
+      "input": "Plan a 3-day trip to Jaipur with a budget of ₹15,000. I like history and local food.",
+      "expected_behavior": [
+        "Generate a 3-day itinerary",
+        "Recommend historical places in Jaipur",
+        "Include local food recommendations",
+        "Consider the ₹15,000 budget",
+        "Provide a budget breakdown"
+      ],
+      "actual_response": "TRIP SUMMARY\n- Destination: Jaipur, Rajasthan\n- Duration: 3 days\n- Budget: ₹15,000\n- Interests: History and local food\n- Assumptions: Solo or couple traveler sharing accommodation costs; traveling via budget local transport (autos, buses, shared cabs).\n\nRECOMMENDED PLACES\n- Amber Fort: Magnificent historic fort showcasing Rajput architecture.\n- City Palace: Royal residence featuring museums, courtyards, and history.\n- Hawa Mahal: Iconic palace of winds with a unique honeycomb structure.\n- Jantar Mantar: UNESCO World Heritage site featuring historic astronomical instruments.\n- Albert Hall Museum: Oldest museum in Rajasthan displaying extensive historical artifacts.\n\nDAY-WISE ITINERARY\n\nDay 1:\nMorning: Visit the majestic Amber Fort and explore its grand courtyards and palaces.\nAfternoon: Explore the historic Jaigarh Fort nearby (known for its massive canon).\nEvening: Walk around Maota Lake and enjoy the sunset view of Amber Fort.\nFood suggestion: Try local Rajasthani snacks like Pyaaz Kachori at Rawat Mishtan Bhandar.\n\nDay 2:\nMorning: Visit the City Palace and the adjacent Jantar Mantar observatory.\nAfternoon: Stop by the iconic Hawa Mahal for photographs and explore the nearby Badi Chaupar markets.\nEvening: Visit Albert Hall Museum and stroll through the surrounding Ramniwas Garden.\nFood suggestion: Enjoy an authentic Dal Baati Churma thali at Laxmi Mishtan Bhandar (LMB) or Chokhi Dhani (if budget permits).\n\nDay 3:\nMorning: Explore the historic Nahargarh Fort for a panoramic view of the Pink City.\nAfternoon: Shop for traditional handicrafts and textiles in the Johri Bazaar and Tripolia Bazaar.\nEvening: Relax at a rooftop café near Jal Mahal, viewing the water palace at sunset.\nFood suggestion: Savor traditional Ghevar and local street chaat near Bapu Bazaar.\n\nBUDGET ESTIMATE\n- Accommodation: ₹4,500 (3 nights at a budget hotel or homestay @ ₹1,500/night)\n- Food: ₹3,500\n- Local transport: ₹2,500 (Auto-rickshaws and shared transport)\n- Entry tickets / activities: ₹1,500 (Monument entry fees)\n- Miscellaneous: ₹1,000 (Water, snacks, small souvenirs)\n- Estimated total: ₹13,000\n\nBUDGET STATUS:\nThe estimated cost of ₹13,000 is within your stated budget of ₹15,000.\n\nTRAVEL TIPS\n- Hire government-approved tourist guides at major forts if you want detailed historical insights.\n- Use auto-rickshaws or app-based aggregators for affordable local travel; always negotiate auto fares beforehand if traveling without a meter.\n- Wear comfortable walking shoes, as exploring the large forts involves a lot of walking on uneven stone paths.\n- Stay hydrated and carry sunscreen, especially during afternoons.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 1.0,
+      "tool_usage": 0.0,
+      "overall_score": 0.75,
+      "overall_percentage": 75.0,
+      "status": "PASS"
+    },
+    {
+      "test_case_id": "TC02",
+      "category": "Different Destination and Duration",
+      "input": "Plan a 5-day trip to Delhi with a budget of ₹30,000. I am interested in museums, monuments and shopping.",
+      "expected_behavior": [
+        "Generate a 5-day itinerary",
+        "Recommend Delhi museums and monuments",
+        "Include shopping locations",
+        "Consider the ₹30,000 budget",
+        "Provide a budget breakdown"
+      ],
+      "actual_response": "TRIP SUMMARY\n- Destination: Delhi\n- Duration: 5 Days\n- Budget: ₹30,000\n- Interests: Museums, monuments, shopping\n- Assumptions: Solo or couple traveler staying in mid-range budget accommodations, using a mix of the Delhi Metro and auto-rickshaws for local transport, and eating a combination of local street food and casual dining.\n\nRECOMMENDED PLACES\n- Red Fort (Lal Qila)\n- Qutub Minar\n- National Museum\n- Humayun's Tomb\n- Chandni Chowk & Dilli Haat (Shopping)\n\nDAY-WISE ITINERARY\n\nDay 1: Historic Heart of Old Delhi\nMorning: Visit the majestic Red Fort to explore its stunning Mughal architecture.\nAfternoon: Walk through the bustling lanes of Chandni Chowk and visit Jama Masjid. Enjoy rickshaw ride through the old markets.\nEvening: Shop for traditional clothes, spices, and souvenirs in the vibrant local bazaars of Chandni Chowk.\nFood suggestion: Try the famous parathas at Paranthe Wali Gali and local street snacks like Dahi Bhalla.\n\nDay 2: Imperial Monuments\nMorning: Explore Humayun’s Tomb, the precursor to the Taj Mahal.\nAfternoon: Visit India Gate and take a leisurely walk around the ceremonial boulevard (Kartavya Path).\nEvening: Head to Connaught Place for a mix of heritage architecture, modern shopping, and cafes.\nFood suggestion: Grab a hearty North Indian meal at a classic Connaught Place restaurant like Kwality or Saravana Bhavan.\n\nDay 3: Art, Culture & Museums\nMorning: Spend your morning exploring the extensive collections at the National Museum (Janpath).\nAfternoon: Visit the nearby National Gallery of Modern Art (NGMA) if time permits, or relax at Lodhi Gardens.\nEvening: Shop for authentic handicrafts and handlooms from across India at Dilli Haat, INA.\nFood suggestion: Try regional Indian delicacies at the various state food stalls inside Dilli Haat.\n\nDay 4: South Delhi Heritage\nMorning: Marvel at the ancient Qutub Minar complex, a UNESCO World Heritage site.\nAfternoon: Visit the nearby Mehrauli Archaeological Park for a quiet, lesser-known historical stroll.\nEvening: Go modern shopping at Select Citywalk Mall in Saket or explore the trendy cafes in Hauz Khas Village.\nFood suggestion: Enjoy fusion cuisine or café food overlooking the Hauz Khas lake at sunset.\n\nDay 5: Spiritual Spaces & Souvenir Shopping\nMorning: Visit the serene Lotus Temple (Bahá'í House of Worship) and the sprawling Akshardham Temple complex.\nAfternoon: Final souvenir and street shopping at Janpath Market for trinkets, bags, and artifacts.\nEvening: Relax, pack, and head to the airport/station for your departure.\nFood suggestion: Enjoy a comforting meal of Chole Bhature at a local spot like Sita Ram Diwan Chand.\n\nBUDGET ESTIMATE\n- Accommodation: ₹10,000 (4 nights at a decent mid-range hotel/homestay at ₹2,500/night)\n- Food: ₹6,000 (Mix of street food and sit-down meals)\n- Local transport: ₹3,000 (Mostly Delhi Metro and occasional auto-rickshaws/cabs)\n- Entry tickets / activities: ₹2,000 (Monuments and museum tickets)\n- Miscellaneous: ₹5,000 (Shopping and souvenirs)\n- Estimated total: ₹26,000\n\nBUDGET STATUS:\nThe estimated cost of ₹26,000 is well within your stated budget of ₹30,000. You have a buffer of ₹4,000 for extra shopping or upgraded dining.\n\nTRAVEL TIPS\n1. Use the Delhi Metro as your primary mode of transport to beat city traffic and save money.\n2. Keep cash handy, as many street food vendors and small handicraft stalls do not accept cards or UPI.\n3. Dress modestly when visiting religious sites (shoulders and knees covered).\n4. Bargain politely when shopping in open-air markets like Janpath and Chandni Chowk.\n5. Stay hydrated, especially if visiting during warmer months, and carry bottled water.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 1.0,
+      "tool_usage": 0.0,
+      "overall_score": 0.75,
+      "overall_percentage": 75.0,
+      "status": "PASS"
+    },
+    {
+      "test_case_id": "TC03",
+      "category": "Low Budget",
+      "input": "Plan a 4-day trip to Goa with a budget of ₹8,000. Suggest affordable places and food options.",
+      "expected_behavior": [
+        "Generate a 4-day itinerary",
+        "Keep recommendations budget-friendly",
+        "Suggest affordable food options",
+        "Clearly indicate if ₹8,000 may be insufficient",
+        "Provide an estimated budget"
+      ],
+      "actual_response": "TRIP SUMMARY\n- Destination: Goa\n- Duration: 4 days\n- Budget: ₹8,000\n- Interests: Affordable sightseeing, beaches, local food, budget exploration\n- Assumptions: Traveling via local buses/trains/two-wheeler rentals, staying in budget backpacker hostels, and eating at local shacks and affordable diners.\n\nRECOMMENDED PLACES\n- Calangute and Baga Beach (Popular beaches for budget strolling)\n- Vagator Beach & Chapora Fort (Scenic views and historical ruins)\n- Panaji (Fontainhas Latin Quarter for colorful architecture and heritage walking)\n- Miramar & Dona Paula View Point (Relaxed coastal views)\n- Anjuna Beach (Famous flea market vibe and sunset views)\n\nDAY-WISE ITINERARY\n\nDay 1: North Goa Beaches\nMorning: Arrive and check into a budget hostel in North Goa. Head straight to Calangute Beach for a relaxing morning by the sea.\nAfternoon: Walk along the shore toward Baga Beach. Explore the surrounding local markets for budget souvenirs.\nEvening: Enjoy the sunset at Baga Beach and relax at a beachside shack.\nFood suggestion: Try Goan Fish Thali or Chicken Cafreal at a local beach shack.\n\nDay 2: Forts and Sunset Views\nMorning: Rent a bicycle or use local buses to visit Chapora Fort for panoramic views of the coastline.\nAfternoon: Head to Vagator Beach for some relaxing time on the golden sand.\nEvening: Visit Anjuna Beach to watch the sunset and experience the lively evening atmosphere.\nFood suggestion: Try local Goan Poro or Veg Xacuti at a small local eatery.\n\nDay 3: Heritage and Culture in Panaji\nMorning: Take a local bus to Panaji, the capital city, and explore the charming, colorful streets of Fontainhas (the Latin Quarter).\nAfternoon: Visit the historic Church of Our Lady of the Immaculate Conception and stroll along the Mandovi riverfront promenade.\nEvening: Head to Miramar Beach for a peaceful evening walk.\nFood suggestion: Try traditional Goan Bebinca (dessert) and local street-style Chicken Xacuti pav in Panaji.\n\nDay 4: Coastal Views and Departure\nMorning: Visit Dona Paula View Point for scenic views of the meeting point of the Zuari and Mandovi rivers.\nAfternoon: Spend some final leisure time shopping for cheap local spices or cashew nuts at the Panaji local market.\nEvening: Depart from Goa.\nFood suggestion: Enjoy a quick Goan vegetable cutlet pav before heading to the station/bus stand.\n\nBUDGET ESTIMATE\n- Accommodation: ₹2,400 (3 nights in a budget hostel dorm @ ₹800/night)\n- Food: ₹2,400 (Affordable local meals and street food @ ₹600/day)\n- Local transport: ₹1,500 (Local buses and occasional shared transport)\n- Entry tickets / activities: ₹200 (Mostly free beaches and forts)\n- Miscellaneous: ₹500 (Water, snacks, and small expenses)\n- Estimated total: ₹7,000\n\nBUDGET STATUS:\nThe estimated total of ₹7,000 is within your stated budget of ₹8,000. \n\nTRAVEL TIPS\n- Use local public buses (Kadamba transport) extensively instead of taxis or auto-rickshaws to save money.\n- Stay in dorm-style backpacker hostels to significantly lower accommodation costs.\n- Carry a reusable water bottle to stay hydrated and save on bottled water expenses.\n- Always check and negotiate prices beforehand if renting bicycles or using unmetered transport.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 0.8,
+      "tool_usage": 0.0,
+      "overall_score": 0.7,
+      "overall_percentage": 70.0,
+      "status": "PASS"
+    },
+    {
+      "test_case_id": "TC04",
+      "category": "Missing Destination",
+      "input": "I want to travel for 3 days with a budget of ₹10,000. I like nature and local food.",
+      "expected_behavior": [
+        "Identify that the destination is missing",
+        "Ask the user for the destination",
+        "Do not invent a destination without clarification"
+      ],
+      "actual_response": "It looks like you forgot to mention your **destination**! \n\nPlease tell me which city or region you would like to visit (for example: Ooty, Goa, Jaipur, Rishikesh, etc.), and I will gladly create a personalized and budget-friendly 3-day itinerary for you.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 1.0,
+      "tool_usage": 0.0,
+      "overall_score": 0.75,
+      "overall_percentage": 75.0,
+      "status": "PASS"
+    },
+    {
+      "test_case_id": "TC05",
+      "category": "Missing Budget",
+      "input": "Plan a 3-day trip to Jaipur. I like forts, culture and local food.",
+      "expected_behavior": [
+        "Generate a suitable 3-day Jaipur itinerary",
+        "Consider the user's interests",
+        "Clearly mention that the budget was not provided",
+        "Ask for or make a clearly stated reasonable budget assumption"
+      ],
+      "actual_response": "TRIP SUMMARY\n- Destination: Jaipur, Rajasthan\n- Duration: 3 days\n- Budget: ₹12,000 (Assumed budget for a mid-range, budget-friendly trip)\n- Interests: Forts, culture, and local food\n- Assumptions: Budget of ₹12,000 for 3 days; traveling solo or as a couple sharing expenses; using local autos and shared transport; staying in a budget hotel/hostel.\n\nRECOMMENDED PLACES\n- Amer Fort (Majestic hilltop fort with stunning architecture)\n- City Palace & Museum (Rich royal culture and history)\n- Hawa Mahal (Iconic cultural landmark)\n- Nahargarh Fort (Panoramic sunset views over the city)\n- Jantar Mantar (UNESCO World heritage astronomical observatory)\n- Johri Bazaar / Bapu Bazaar (Local shopping and street food hubs)\n\nDAY-WISE ITINERARY\n\nDay 1: Majestic Forts & Cultural Heritage\nMorning: Visit the magnificent Amer Fort and take in its stunning courtyards and mirror work.\nAfternoon: Explore the nearby Jaigarh Fort to see the world's largest cannon on wheels and enjoy the views.\nEvening: Head to Nahargarh Fort to watch a breathtaking sunset over Jaipur city.\nFood suggestion: Enjoy a traditional Rajasthani Thali for dinner at a local restaurant near the old city.\n\nDay 2: Royal Palaces & Old City Charm\nMorning: Explore the grand City Palace and its museum showcasing royal costumes and weapons.\nAfternoon: Walk across to Jantar Mantar, the historic stone astronomical observatory. Stop by the iconic Hawa Mahal for photos.\nEvening: Stroll through the bustling lanes of Bapu Bazaar and Johri Bazaar to experience local culture and shop for handicrafts.\nFood suggestion: Try local street food snacks like Pyaz Kachori and Mirchi Bada at a famous heritage sweet shop (e.g., Rawat Mishthan Bhandar).\n\nDay 3: Temples, Heritage & Local Flavors\nMorning: Visit the serene Galtaji Temple (Monkey Temple nestled in the hills) for a unique cultural experience.\nAfternoon: Explore Albert Hall Museum, situated in the picturesque Ram Niwas Garden.\nEvening: Relax at Jawahar Kala Kendra or take a leisurely walk around the walled city soaking in the vibrant pink architecture.\nFood suggestion: Relish the famous Dal Baati Churma at a traditional eatery for your final dinner.\n\nBUDGET ESTIMATE\n- Accommodation: ₹4,500 (3 nights at a budget hotel or hostel)\n- Food: ₹3,000 (Local eateries and street food)\n- Local transport: ₹2,000 (Auto-rickshaws and shared transport)\n- Entry tickets / activities: ₹1,500 (Fort and monument entry fees)\n- Miscellaneous: ₹1,000 (Water, souvenirs, small expenses)\n- Estimated total: ₹12,000\n\nBUDGET STATUS:\nThe estimated cost is around ₹12,000, which fits reasonably well into the assumed budget. If you have a specific different budget in mind, please let me know so I can adjust the plan!\n\nTRAVEL TIPS\n1. Hire pre-paid auto-rickshaws or use ride-hailing apps to avoid overpaying for transport.\n2. Wear comfortable walking shoes, as exploring the forts involves climbing ramps and stone steps.\n3. Carry a reusable water bottle and stay hydrated during the day.\n4. Bargain politely when shopping in local bazaars.\n5. Dress modestly when visiting religious sites like temples.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 1.0,
+      "tool_usage": 0.0,
+      "overall_score": 0.75,
+      "overall_percentage": 75.0,
+      "status": "PASS"
+    },
+    {
+      "test_case_id": "TC06",
+      "category": "Invalid Number of Days",
+      "input": "Plan a 0-day trip to Mumbai with a budget of ₹10,000.",
+      "expected_behavior": [
+        "Identify that 0 days is invalid",
+        "Ask the user to provide a valid positive number of days",
+        "Do not generate a normal itinerary for 0 days"
+      ],
+      "actual_response": "A travel itinerary must have at least 1 day. The number of days you provided is invalid. Please provide a valid positive number of days.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 1.0,
+      "tool_usage": 0.0,
+      "overall_score": 0.75,
+      "overall_percentage": 75.0,
+      "status": "PASS"
+    },
+    {
+      "test_case_id": "TC07",
+      "category": "Negative Budget",
+      "input": "Plan a 3-day trip to Delhi with a budget of -₹5,000.",
+      "expected_behavior": [
+        "Identify that the budget is invalid",
+        "Explain that a negative budget cannot be used for travel planning",
+        "Ask the user for a valid positive budget",
+        "Do not create a normal budget plan using the negative value"
+      ],
+      "actual_response": "The budget provided is invalid because a travel budget cannot be negative. Please provide a valid positive budget.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 1.0,
+      "tool_usage": 0.0,
+      "overall_score": 0.75,
+      "overall_percentage": 75.0,
+      "status": "PASS"
+    },
+    {
+      "test_case_id": "TC08",
+      "category": "Historical Preference",
+      "input": "I want to visit Agra for 2 days with a budget of ₹12,000. I am mainly interested in historical places and architecture.",
+      "expected_behavior": [
+        "Generate a 2-day Agra itinerary",
+        "Prioritize historical places",
+        "Include architecture-related attractions",
+        "Consider the ₹12,000 budget",
+        "Provide a budget breakdown"
+      ],
+      "actual_response": "TRIP SUMMARY\n- Destination: Agra\n- Duration: 2 days\n- Budget: ₹12,000\n- Interests: Historical places and architecture\n- Assumptions: Solo or couple traveler staying in a budget hotel, using auto-rickshaws/ride-hailing apps for local transport.\n\nRECOMMENDED PLACES\n- Taj Mahal\n- Agra Fort\n- Itimad-ud-Daulah (Baby Taj)\n- Mehtab Bagh\n\nDAY-WISE ITINERARY\n\nDay 1:\nMorning: Visit the Taj Mahal early at sunrise to beat the crowd and appreciate the stunning Mughal architecture.\nAfternoon: Explore the massive Agra Fort, walking through its palaces, courtyards, and halls of historical significance.\nEvening: Head to Mehtab Bagh across the river Yamuna for a serene sunset view of the Taj Mahal from the gardens.\nFood suggestion: Try traditional Mughlai cuisine like biryani and kebabs at a local restaurant near Sadar Bazaar (e.g., Pinch of Spice or Mama Chicken Mama Franky).\n\nDay 2:\nMorning: Visit the exquisite Itimad-ud-Daulah (often called the 'Baby Taj'), known for its delicate marble inlay work and Persian architecture.\nAfternoon: Explore Akbar’s Tomb in Sikandra (on the outskirts of Agra) to witness a unique blend of Hindu, Christian, Islamic, Buddhist, and Jain architectural motifs.\nEvening: Shop for local handicrafts, marble artifacts, and leather goods at Sadar Bazaar.\nFood suggestion: Enjoy a classic Agra breakfast of bedmi puri and jalebi at Deviram Sweets, followed by local petha sweets.\n\nBUDGET ESTIMATE\n- Accommodation: ₹3,500 (1 night in a clean, mid-range budget hotel)\n- Food: ₹2,500\n- Local transport: ₹1,500 (Auto-rickshaws and local cabs)\n- Entry tickets / activities: ₹1,550 (Taj Mahal main mausoleum + Agra Fort + Baby Taj + Akbar's Tomb)\n- Miscellaneous: ₹1,000 (Water, souvenirs, snacks)\n- Estimated total: ₹10,050\n\nBUDGET STATUS:\nThe estimated cost (₹10,050) is well within your stated budget of ₹12,000.\n\nTRAVEL TIPS\n- Book your Taj Mahal tickets online in advance to avoid long queues.\n- The Taj Mahal is closed on Fridays, so plan your days accordingly.\n- Beware of unofficial tourist guides offering unsolicited services outside major monuments.\n- Carry a reusable water bottle and wear comfortable walking shoes for exploring the forts and gardens.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 1.0,
+      "tool_usage": 0.0,
+      "overall_score": 0.75,
+      "overall_percentage": 75.0,
+      "status": "PASS"
+    },
+    {
+      "test_case_id": "TC09",
+      "category": "Food Preference",
+      "input": "Plan a 3-day trip to Lucknow with a budget of ₹12,000. I am mainly interested in local food and traditional cuisine.",
+      "expected_behavior": [
+        "Generate a 3-day Lucknow itinerary",
+        "Include local and traditional food recommendations",
+        "Recommend suitable places to visit",
+        "Consider the ₹12,000 budget",
+        "Provide a budget breakdown"
+      ],
+      "actual_response": "TRIP SUMMARY\n- Destination: Lucknow, Uttar Pradesh\n- Duration: 3 days\n- Budget: ₹12,000\n- Interests: Local food, traditional cuisine, historical food walks\n- Assumptions: Solo or budget-friendly twin-sharing traveler; using auto-rickshaws, e-rickshaws, and shared cabs for local transport; staying in a clean budget hotel/homestay.\n\nRECOMMENDED PLACES\n- Tunday Kababi (Aminabad / Chowk) - Iconic destination for melt-in-the-mouth galouti kebabs\n- Hazratganj - Heart of the city, great for evening walks, street shopping, and bakeries\n- Bara Imambara & Rumi Darwaza - Architectural marvels with rich history and nearby heritage food stalls\n- Chowk - Old Lucknow market famous for traditional sweets, chikankari, and street food\n- Dastarkhwan - Renowned restaurant for authentic Awadhi non-vegetarian cuisine\n\nDAY-WISE ITINERARY\n\nDay 1: Arrival & Exploring Hazratganj\nMorning: Arrive in Lucknow, check into your budget hotel, and freshen up. Head to Hazratganj for a casual walk around the heritage-styled market.\nAfternoon: Enjoy a traditional lunch at Royal Café in Hazratganj (famous for their basket chaat).\nEvening: Visit the Janeshwar Mishra Park or take a relaxed stroll through Hazratganj, stopping by the historic Ram Asrey sweet shop for traditional Malai Paan.\nFood suggestion: Basket Chaat at Royal Café and Kulfi Falooda at Prakash Kulfi.\n\nDay 2: Heritage Walk & Awadhi Feast\nMorning: Visit the magnificent Bara Imambara and explore the famous Bhulbhulaiya (labyrinth), followed by a quick look at the nearby Rumi Darwaza.\nAfternoon: Head to Chowk for lunch at the legendary Tunday Kababi to taste authentic Galouti kebabs with Ulte Tawa ka Paratha.\nEvening: Walk through the bustling lanes of Aminabad for street shopping and evening snacks.\nFood suggestion: Galouti Kebabs with Ulte Tawa ka Paratha at Tunday Kababi, and Rahim's Nihari and Kulcha for breakfast/early dinner.\n\nDay 3: Culinary Grandeur & Departure\nMorning: Visit the British Residency ruins to learn a bit of history and enjoy the peaceful gardens.\nAfternoon: Have a lavish Awadhi lunch at Dastarkhwan (try their Chicken Biryani and Shahi Tukta).\nEvening: Pick up some local Lucknowi sweets (like Rewri or Peda) from Chowk before heading to the station/airport for your departure.\nFood suggestion: Shahi Tukta and Chicken Biryani at Dastarkhwan.\n\nBUDGET ESTIMATE\n- Accommodation: ₹3,600 (3 nights at a budget hotel @ ₹1,200/night)\n- Food: ₹4,500 (Generous allowance for street food, kebabs, and fine Awadhi dining)\n- Local transport: ₹1,500 (E-rickshaws, autos, and occasional cabs)\n- Entry tickets / activities: ₹400 (Bara Imambara, Residency, etc.)\n- Miscellaneous: ₹1,000 (Water, snacks, small souvenirs)\n- Estimated total: ₹11,000\n\nBUDGET STATUS:\nThe estimated cost of ₹11,000 is well within your stated budget of ₹12,000. You have a comfortable buffer of ₹1,000 for extra snacks or a special souvenir.\n\nTRAVEL TIPS\n1. Stay hydrated and carry bottled water, especially when exploring crowded heritage markets like Chowk and Aminabad.\n2. Use e-rickshaws for short distances—they are cheap, eco-friendly, and easily navigate tight lanes.\n3. Try to visit food joints slightly before peak lunch and dinner hours to avoid long waiting times.\n4. Bargain politely if you are purchasing local handicrafts like Chikankari garments in the old markets.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 1.0,
+      "tool_usage": 0.0,
+      "overall_score": 0.75,
+      "overall_percentage": 75.0,
+      "status": "PASS"
+    },
+    {
+      "test_case_id": "TC10",
+      "category": "Outside Agent Scope",
+      "input": "Explain how to write a Python program to calculate Fibonacci numbers.",
+      "expected_behavior": [
+        "Recognize that the request is unrelated to travel",
+        "Do not provide Python programming instructions",
+        "Politely redirect the user toward travel-related assistance"
+      ],
+      "actual_response": "I’m a Personal Travel Planner Agent, so I can only help with travel-related requests such as destinations, itineraries, budgets, accommodation, transportation, food recommendations, and travel tips.",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "completeness": 1.0,
+      "tool_usage": 0.0,
+      "overall_score": 0.75,
+      "overall_percentage": 75.0,
+      "status": "PASS"
+    }
+  ]
+}
